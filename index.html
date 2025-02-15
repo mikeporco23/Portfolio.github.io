@@ -15,14 +15,14 @@
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <style>
             body {
-                background: #f4f4f9;
+                background: #ffffff; /* Light background for better contrast */
                 font-family: 'Arial', sans-serif;
                 margin: 0;
                 padding: 0;
             }
             header {
-                background: #333;
-                color: #fff;
+                background: #333333;
+                color: #ffffff;
                 padding: 20px 40px;
                 text-align: center;
                 position: sticky;
@@ -35,17 +35,17 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                background: #444;
+                background: #444444;
                 padding: 15px;
             }
             nav a {
-                color: #fff;
+                color: #ffffff;
                 text-decoration: none;
                 padding: 10px 20px;
                 transition: background 0.3s;
             }
             nav a:hover {
-                background: #555;
+                background: #555555;
             }
             .hero {
                 background: url('images/hero.jpg') no-repeat center center/cover;
@@ -53,16 +53,20 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: #fff;
+                color: #ffffff;
                 text-align: center;
             }
             .hero h1 {
                 font-size: 4rem;
-                text-shadow: 2px 2px 5px #000;
+                text-shadow: 2px 2px 5px #000000;
+            }
+            .hero p {
+                font-size: 1.25rem;
+                text-shadow: 1px 1px 3px #000000;
             }
             .hero .button {
                 background: #ff4b5c;
-                color: #fff;
+                color: #ffffff;
                 padding: 15px 30px;
                 border: none;
                 cursor: pointer;
@@ -82,13 +86,13 @@
                 justify-content: space-around;
             }
             .card {
-                background: #fff;
-                border: 1px solid #ddd;
+                background: #ffffff;
+                border: 1px solid #dddddd;
                 border-radius: 10px;
                 margin: 10px;
                 padding: 20px;
                 width: calc(33% - 40px);
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 transition: transform 0.3s;
             }
             .card:hover {
@@ -103,10 +107,35 @@
                 text-align: center;
             }
             .footer {
-                background: #333;
-                color: #fff;
+                background: #333333;
+                color: #ffffff;
                 padding: 20px 0;
                 text-align: center;
+            }
+            /* Additional improvements to form inputs */
+            input, select, textarea {
+                font-family: 'Arial', sans-serif;
+                border: 1px solid #cccccc;
+                padding: 10px;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            /* Ensure links are easily distinguishable */
+            a {
+                color: #0066cc;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            /* Ensure headings have enough space */
+            h1, h2, h3, h4, h5, h6 {
+                margin: 20px 0 10px;
+            }
+            /* Improve padding for paragraphs */
+            p {
+                margin: 10px 0;
+                line-height: 1.6;
             }
         </style>
     </head>
@@ -155,25 +184,25 @@
                 <div class="card">
                     <img src="images/espresso.jpeg" alt="Espresso Image">
                     <h3>Coffee Data Exploration in R</h3>
-                    <p>Using R, I clean, analyze, and visualize coffee exportation data to find the countries with growing exports. I used mutate to calculate new columns, I pivoted the dataframe from wide to long format, and visualized the data using ggplot2.</p>
+                    <p>Using R, I clean, analyze, and visualize coffee exportation data to find the countries with growing exports. I used mutate to calculate new columns, I pivoted the dataframe from long to wide format, and visualized the results.</p>
                     <a href="https://github.com/mikeporco23/Portfolio/blob/main/coffee.pdf" class="button">View Analysis</a>
                 </div>
                 <div class="card">
                     <img src="images/bikerack.jpeg" alt="Bike Rack Image">
                     <h3>Bike Share Usage Data Analysis in R</h3>
-                    <p>Using R, I clean, analyze, and visualize bike share usage data to find actionable insights for the fictional Cyclistic business. I combined multiple datasets based on the business' calendar and used various R packages for analysis.</p>
+                    <p>Using R, I clean, analyze, and visualize bike share usage data to find actionable insights for the fictional Cyclistic business. I combined multiple datasets based on the business needs, performed exploratory data analysis, and created visualizations.</p>
                     <a href="https://github.com/mikeporco23/Portfolio/blob/main/cyclistic.pdf" class="button">View Analysis</a>
                 </div>
                 <div class="card">
                     <img src="images/mohawk.png" alt="Mohawk Image">
                     <h3>Python Populator</h3>
-                    <p>This Python project makes it possible to create thousands of unique PNG images and JSON attribute files from layers of hand-drawn images made by my brother. To make it possible, I used PIL and other Python libraries.</p>
+                    <p>This Python project makes it possible to create thousands of unique PNG images and JSON attribute files from layers of hand-drawn images made by my brother. To make it possible, I leveraged PIL, JSON, and other libraries.</p>
                     <a href="https://github.com/mikeporco23/python-populator" class="button">View Project</a>
                 </div>
                 <div class="card">
                     <img src="images/restaurant.jpeg" alt="Restaurant Image">
                     <h3>Excel Spreadsheet for Restaurant Tips</h3>
-                    <p>While working as a Server and Bartender in a local French Restaurant, I noticed an opportunity to use my skills as a data analyst to improve efficiency in the workplace. I created an Excel spreadsheet to streamline the tip-out process.</p>
+                    <p>While working as a Server and Bartender in a local French Restaurant, I noticed an opportunity to use my skills as a data analyst to improve efficiency in the workplace. I created an Excel spreadsheet to automate the tip calculation process and provided insights on tip distribution.</p>
                     <a href="https://github.com/mikeporco23/Portfolio/blob/main/Tip-Out-Sheet.xlsx" class="button">View Project</a>
                 </div>
             </div>
