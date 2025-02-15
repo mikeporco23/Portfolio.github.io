@@ -101,19 +101,23 @@ input, select, textarea {
     }
 
     body {
-        background-color: #1e252d;
+        background-color: #ffffff; /* Light background for better contrast */
+        color: #333333; /* Darker text color */
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
     }
 
-        body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-            -moz-animation: none !important;
-            -webkit-animation: none !important;
-            -ms-animation: none !important;
-            animation: none !important;
-            -moz-transition: none !important;
-            -webkit-transition: none !important;
-            -ms-transition: none !important;
-            transition: none !important;
-        }
+    body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+        -moz-animation: none !important;
+        -webkit-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+        -moz-transition: none !important;
+        -webkit-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+    }
 
 /* Type */
 
@@ -144,10 +148,6 @@ input, select, textarea {
             }
 
         }
-
-    body {
-        color: #333; /* Darker text color for better contrast */
-    }
 
     body, input, select, textarea {
         font-family: "Merriweather", Georgia, serif;
@@ -291,16 +291,20 @@ hr {
 
 input, select, textarea {
     color: #333; /* Darker text color for better contrast */
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 a {
-    color: #212931;
-    border-bottom-color: rgba(33, 41, 49, 0.5);
+    color: #0066cc;
+    text-decoration: none;
 }
 
     a:hover {
-        border-bottom-color: transparent;
-        color: #18bfef !important;
+        text-decoration: underline;
     }
 
 strong, b {
@@ -309,6 +313,7 @@ strong, b {
 
 h1, h2, h3, h4, h5, h6 {
     color: #212931;
+    margin: 20px 0 10px;
 }
 
 blockquote {
@@ -324,13 +329,18 @@ hr {
     border-bottom-color: #eeeeee;
 }
 
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
 /* Row */
 
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-        align-items: stretch;
-    }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: stretch;
+}
 
-        .row > *
+.row > *
