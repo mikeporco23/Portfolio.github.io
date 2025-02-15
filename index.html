@@ -15,163 +15,172 @@
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <style>
             body {
-                background: linear-gradient(to right, #6a11cb, #2575fc);
+                background: #f4f4f9;
                 font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
             }
-            h1, h2, h3, h4, h5, h6 {
-                font-family: 'Verdana', sans-serif;
-            }
-            .button {
-                transition: background-color 0.3s ease;
-            }
-            .button:hover {
-                background-color: #333;
+            header {
+                background: #333;
                 color: #fff;
+                padding: 10px 20px;
+                text-align: center;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+            nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background: #444;
+                padding: 10px;
+            }
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 20px;
+                transition: background 0.3s;
+            }
+            nav a:hover {
+                background: #555;
+            }
+            .hero {
+                background: url('images/hero.jpg') no-repeat center center/cover;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 4rem;
+            }
+            .hero .button {
+                background: #ff4b5c;
+                color: #fff;
+                padding: 15px 30px;
+                border: none;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+            .hero .button:hover {
+                background: #ff6b7c;
+            }
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px 0;
+            }
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
             }
             .card {
                 background: #fff;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                overflow: hidden;
-                transition: transform 0.2s;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                margin: 10px;
+                padding: 20px;
+                width: calc(33% - 40px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                transition: transform 0.3s;
             }
             .card:hover {
                 transform: translateY(-10px);
             }
-            .image {
-                transition: transform 0.2s;
+            .card img {
+                max-width: 100%;
+                border-radius: 10px;
             }
-            .image:hover {
-                transform: scale(1.05);
+            .about, .skills, .contact {
+                padding: 40px 0;
+                text-align: center;
             }
-            .fade-in {
-                animation: fadeIn 2s;
-                opacity: 1;
-            }
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
+            .footer {
+                background: #333;
+                color: #fff;
+                padding: 20px 0;
+                text-align: center;
             }
         </style>
     </head>
-    <body class="is-preload">
+    <body>
 
-        <!-- Wrapper -->
-        <div id="wrapper" class="fade-in">
+        <!-- Header -->
+        <header>
+            <h1>Michael Porco Portfolio</h1>
+        </header>
 
-            <!-- Intro -->
-            <div id="intro">
-                <h1>Michael Porco <br /> Data Analytics Portfolio<br /></h1>
-                <p>Data Analyst skilled in Python, SQL, Tableau, Excel, and R. Find me on <a href="https://www.linkedin.com/in/michael-porco-b01225206/">LinkedIn</a>.</p>
-                <ul class="actions">
-                    <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-                </ul>
+        <!-- Navigation -->
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div>
+                <h1>Welcome to My Portfolio</h1>
+                <p>Data Analyst skilled in Python, SQL, Tableau, Excel, and R.</p>
+                <button class="button">Learn More</button>
             </div>
+        </section>
 
-            <!-- Header -->
-            <header id="header">
-                <a href="index.html" class="logo">Michael Porco</a>
-            </header>
+        <!-- About Section -->
+        <section id="about" class="about container">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="Michael Porco" style="border-radius: 50%; width: 150px;">
+            <p>Hello! I'm Michael Porco, a passionate Data Analyst with expertise in various analytical tools and techniques. I love turning raw data into actionable insights and making data-driven decisions.</p>
+        </section>
 
-            <!-- Nav -->
-            <nav id="nav">
-                <ul class="links">
-                    <li class="active"><a href="index.html">Portfolio Projects</a></li>
-                    <li><a href="https://www.linkedin.com/in/michael-porco-b01225206/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/mikeporco23/Portfolio" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                </ul>
-                <ul class="icons"></ul>
-            </nav>
-
-            <!-- Main -->
-            <div id="main">
-
-                <!-- Featured Post -->
-                <article class="post featured card">
-                    <header class="major">
-                        <h2><a href="https://github.com/mikeporco23/Portfolio/blob/main/Movie%20Correlation%20Project.ipynb">Python Correlation Analysis<br /></a></h2>
-                        <p>In this analysis I use Python's pandas, regex, seaborn, and numpy to find and visualize correlations between every element of a dataframe of the movie industry.</p>
-                    </header>
-                    <a href="https://github.com/mikeporco23/Portfolio/blob/main/Movie%20Correlation%20Project.ipynb" class="image main"><img src="images/theater.jpeg" alt="Theater Image" /></a>
-                    <ul class="actions special">
-                        <li><a href="https://github.com/mikeporco23/Portfolio/blob/main/Movie%20Correlation%20Project.ipynb" class="button large">View Analysis</a></li>
-                    </ul>
-                </article>
-
-                <!-- Posts -->
-                <section class="posts">
-                    <article class="card">
-                        <header>
-                            <h2><a href="https://github.com/mikeporco23/Portfolio/blob/main/coffee.pdf">Coffee Data Exploration in R<br /></a></h2>
-                        </header>
-                        <a href="https://github.com/mikeporco23/Portfolio/blob/main/coffee.pdf" class="image fit"><img src="images/espresso.jpeg" alt="Espresso Image" /></a>
-                        <p>Using R, I clean, analyze, and visualize coffee exportation data to find the countries with growing exports. I used mutate to calculate new columns, I pivoted the dataframe from wide to long format, and visualized the data using ggplot2.</p>
-                        <ul class="actions special">
-                            <li><a href="https://github.com/mikeporco23/Portfolio/blob/main/coffee.pdf" class="button">View Analysis</a></li>
-                        </ul>
-                    </article>
-                    <article class="card">
-                        <header>
-                            <h2><a href="https://github.com/mikeporco23/Portfolio/blob/main/cyclistic.pdf">Bike Share Usage Data Analysis in R<br /></a></h2>
-                        </header>
-                        <a href="https://github.com/mikeporco23/Portfolio/blob/main/cyclistic.pdf" class="image fit"><img src="images/bikerack.jpeg" alt="Bike Rack Image" /></a>
-                        <p>Using R, I clean, analyze, and visualize bike share usage data to find actionable insights for the fictional Cyclistic business. I combined multiple datasets based on the business' calendar and used various R packages for analysis.</p>
-                        <ul class="actions special">
-                            <li><a href="https://github.com/mikeporco23/Portfolio/blob/main/cyclistic.pdf" class="button">View Analysis</a></li>
-                        </ul>
-                    </article>
-                    <article class="card">
-                        <header>
-                            <h2><a href="https://github.com/mikeporco23/python-populator">Python Populator<br /></a></h2>
-                        </header>
-                        <a href="https://github.com/mikeporco23/python-populator" class="image fit"><img src="images/mohawk.png" alt="Mohawk Image" /></a>
-                        <p>This Python project makes it possible to create thousands of unique PNG images and JSON attribute files from layers of hand-drawn images made by my brother. To make it possible, I used PIL and other Python libraries.</p>
-                        <ul class="actions special">
-                            <li><a href="https://github.com/mikeporco23/python-populator" class="button">View Project</a></li>
-                        </ul>
-                    </article>
-                    <article class="card">
-                        <header>
-                            <h2><a href="https://github.com/mikeporco23/Portfolio/blob/main/Tip-Out-Sheet.xlsx">Excel Spreadsheet for Restaurant Tips<br /></a></h2>
-                        </header>
-                        <a href="https://github.com/mikeporco23/Portfolio/blob/main/Tip-Out-Sheet.xlsx" class="image fit"><img src="images/restaurant.jpeg" alt="Restaurant Image" /></a>
-                        <p>While working as a Server and Bartender in a local French Restaurant, I noticed an opportunity to use my skills as a data analyst to improve efficiency in the workplace. I created an Excel spreadsheet to streamline the tip-out process.</p>
-                        <ul class="actions special">
-                            <li><a href="https://github.com/mikeporco23/Portfolio/blob/main/Tip-Out-Sheet.xlsx" class="button">View Project</a></li>
-                        </ul>
-                    </article>
-                </section>
-
-                <!-- Contact -->
-                <section class="split contact">
-                    <section class="alt">
-                        <h3>Location</h3>
-                        <p>Rockland County, New York<br />Seattle, Washington</p>
-                    </section>
-                    <section>
-                        <h3>Email</h3>
-                        <p><a href="mailto:mikeporco23@gmail.com">mikeporco23@gmail.com</a></p>
-                    </section>
-                    <section>
-                        <h3>Social</h3>
-                        <ul class="icons alt">
-                            <li><a href="https://www.linkedin.com/in/michael-porco-b01225206/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                            <li><a href="https://github.com/mikeporco23/Portfolio" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                        </ul>
-                    </section>
-                </section>
+        <!-- Projects Section -->
+        <section id="projects" class="container">
+            <h2>My Projects</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/theater.jpeg" alt="Theater Image">
+                    <h3>Python Correlation Analysis</h3>
+                    <p>In this analysis I use Python's pandas, regex, seaborn, and numpy to find and visualize correlations between every element of a dataframe of the movie industry.</p>
+                    <a href="https://github.com/mikeporco23/Portfolio/blob/main/Movie%20Correlation%20Project.ipynb" class="button">View Analysis</a>
+                </div>
+                <div class="card">
+                    <img src="images/espresso.jpeg" alt="Espresso Image">
+                    <h3>Coffee Data Exploration in R</h3>
+                    <p>Using R, I clean, analyze, and visualize coffee exportation data to find the countries with growing exports. I used mutate to calculate new columns, I pivoted the dataframe from wide to long format, and visualized the data using ggplot2.</p>
+                    <a href="https://github.com/mikeporco23/Portfolio/blob/main/coffee.pdf" class="button">View Analysis</a>
+                </div>
+                <!-- Add more cards as needed -->
             </div>
+        </section>
 
-            <!-- Copyright -->
-            <div id="copyright">
-                <ul><li>&copy; 2023 Michael Porco</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-            </div>
+        <!-- Skills Section -->
+        <section id="skills" class="skills container">
+            <h2>My Skills</h2>
+            <p>Data Analysis, Python, SQL, Tableau, Excel, R</p>
+            <!-- Add progress bars or icons for skills -->
+        </section>
 
-        </div>
+        <!-- Contact Section -->
+        <section id="contact" class="contact container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:mikeporco23@gmail.com">mikeporco23@gmail.com</a></p>
+            <p>Location: Rockland County, New York | Seattle, Washington</p>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/michael-porco-b01225206/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/mikeporco23/Portfolio" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2023 Michael Porco | Design by HTML5 UP</p>
+        </footer>
 
         <!-- Scripts -->
         <script src="assets/js/jquery.min.js" defer></script>
