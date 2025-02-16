@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>About Me | Michael Porco</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+        <meta name="description" content="Learn more about Michael Porco, a skilled Data Analyst.">
+        <meta name="keywords" content="Michael Porco, About Me, Data Analyst">
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+            <div id="wrapper" class="fade-in">
+
+                <!-- Intro -->
+                    <div id="intro">
+                        <h1>About Me</h1>
+                        <p>Hi, I'm Michael Porco, a Data Analyst skilled in Python, SQL, Tableau, Excel, and R. Welcome to my personal website where you can learn more about my professional background and projects.</p>
+                        <ul class="actions">
+                            <li><a href="index.html" class="button icon solid solo fa-arrow-left scrolly">Back to Portfolio</a></li>
+                        </ul>
+                    </div>
+
+                <!-- Main Content -->
+                    <div id="main">
+                        <section>
+                            <header class="major">
+                                <h2>About Me</h2>
+                            </header>
+                            <p>I have a passion for data and uncovering insights that drive business decisions. With experience in various data analysis tools and techniques, I strive to provide meaningful and actionable insights through my work. I am always eager to learn and take on new challenges in the field of data analytics.</p>
+                        </section>
+                    </div>
+
+                <!-- Footer -->
+                    <footer id="footer">
+                        <section>
+                            <h2>Contact</h2>
+                            <dl class="alt">
+                                <dt>Email</dt>
+                                <dd><a href="mailto:mikeporco23@gmail.com">mikeporco23@gmail.com</a></dd>
+                                <dt>Location</dt>
+                                <dd>Seattle, Washington</dd>
+                            </dl>
+                            <ul class="icons">
+                                <li><a href="https://www.linkedin.com/in/michael-porco-b01225206/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                <li><a href="https://github.com/mikeporco23/Portfolio" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                            </ul>
+                        </section>
+                    </footer>
+
+                <!-- Copyright -->
+                    <div id="copyright">
+                        <ul><li>&copy; Michael Porco</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+                    </div>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
