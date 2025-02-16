@@ -12,12 +12,22 @@
         <style>
             .intro-background {
                 background-image: url('images/cover.jpg');
-                background-size: 70%; /* 30% smaller */
+                background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 text-align: center;
-                color: white; /* Ensure text visibility */
-                padding: 100px 20px; /* Add padding for spacing */
+                color: white;
+                padding: 100px 20px;
+                height: 100vh;
+                position: relative;
+            }
+            .intro-background h1, .intro-background p {
+                text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+                font-size: 1.5em;
+            }
+            .intro-background a {
+                color: #ffcc00;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
             }
             .nav-link {
                 display: inline-flex;
@@ -35,7 +45,7 @@
                     <div id="intro" class="intro-background">
                         <h1>Michael Porco <br /> Data Analytics Portfolio<br />
                         </h1>
-                        <p>Data Analyst skilled in Python, SQL, Tableau, Excel, and R. Find me on <a href="https://www.linkedin.com/in/michael-porco-b01225206/" style="color: #ddd;">linkedin</a>.
+                        <p>Data Analyst skilled in Python, SQL, Tableau, Excel, and R. Find me on <a href="https://www.linkedin.com/in/michael-porco-b01225206/">linkedin</a>.
                         </p>
                         <ul class="actions">
                             <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
