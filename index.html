@@ -10,13 +10,14 @@
         <meta name="description" content="Michael Porco's Data Analytics Portfolio showcasing skills in Python, SQL, Tableau, Excel, and R.">
         <meta name="keywords" content="Data Analytics, Python, SQL, Tableau, Excel, R, Portfolio, Michael Porco">
         <style>
-            .center-image {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 20px; /* Add top margin */
-                margin-bottom: 20px; /* Add bottom margin */
-                width: 50%; /* Adjust size for better visibility */
+            .intro-background {
+                background-image: url('images/cover.jpg');
+                background-size: 70%; /* 30% smaller */
+                background-position: center;
+                background-repeat: no-repeat;
+                text-align: center;
+                color: white; /* Ensure text visibility */
+                padding: 100px 20px; /* Add padding for spacing */
             }
             .nav-link {
                 display: inline-flex;
@@ -30,14 +31,11 @@
         <!-- Wrapper -->
             <div id="wrapper" class="fade-in">
 
-                <!-- Center Image -->
-                <img src="images/cover.jpg" alt="Cover Image" class="center-image">
-
                 <!-- Intro -->
-                    <div id="intro">
+                    <div id="intro" class="intro-background">
                         <h1>Michael Porco <br /> Data Analytics Portfolio<br />
                         </h1>
-                        <p>Data Analyst skilled in Python, SQL, Tableau, Excel, and R. Find me on <a href="https://www.linkedin.com/in/michael-porco-b01225206/">linkedin</a>.
+                        <p>Data Analyst skilled in Python, SQL, Tableau, Excel, and R. Find me on <a href="https://www.linkedin.com/in/michael-porco-b01225206/" style="color: #ddd;">linkedin</a>.
                         </p>
                         <ul class="actions">
                             <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
@@ -149,12 +147,6 @@
                                 </ul>
                             </section>
                         </section>
-                    </footer>
-
-                <!-- Copyright -->
-                    <div id="copyright">
-                        <ul><li>&copy; Michael Porco</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-                    </div>
 
             </div>
 
