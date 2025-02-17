@@ -11,13 +11,9 @@
         <meta name="keywords" content="Data Analytics, Python, SQL, Tableau, Excel, R, Portfolio, Michael Porco">
         <style>
             .intro-background {
-                background-image: url('images/cover.jpg');
-                background-size: 60%;
-                background-position: center;
-                background-repeat: no-repeat;
                 text-align: center;
                 color: white;
-                padding: 300px 150px;
+                padding: 100px 20px;
                 height: 100vh;
                 position: relative;
                 margin: 20px;
@@ -33,7 +29,14 @@
             .nav-link {
                 display: inline-flex;
                 align-items: center;
-                padding: 0 15px;
+                padding: 0 25px; /* Added more padding to the left */
+            }
+            .cover-image {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 40%; /* Adjust the width as needed */
+                margin: 20px;
             }
         </style>
     </head>
@@ -158,6 +161,8 @@
                                 </ul>
                             </section>
                         </section>
+                        
+                        <img src="images/cover.jpg" class="cover-image" alt="Cover Image">
 
             </div>
 
