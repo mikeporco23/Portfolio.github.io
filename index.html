@@ -10,25 +10,12 @@
         <meta name="description" content="Michael Porco's Data Analytics Portfolio showcasing skills in Python, SQL, Tableau, Excel, and R.">
         <meta name="keywords" content="Data Analytics, Python, SQL, Tableau, Excel, R, Portfolio, Michael Porco">
         <style>
-            .intro-background {
-                background-image: url('images/cover.jpg');
-                background-size: cover; /* Changed from 60% to cover */
-                background-position: center;
-                background-repeat: no-repeat;
-                text-align: center;
-                color: white;
-                padding: 100px 50px;
-                height: 100vh;
-                position: relative;
-                margin: 0; /* Changed from 50px to 0 */
-            }
-            .intro-background h1, .intro-background p {
-                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Changed from 3px 3px 8px */
-                font-size: 1.5em;
-            }
-            .intro-background a {
-                color: #ffcc00;
-                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            .center-image {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 10px; /* Reduced bottom margin */
+                width: 30%; /* Reduced width to make it more welcoming */
             }
             .nav-link {
                 display: inline-flex;
@@ -42,11 +29,14 @@
         <!-- Wrapper -->
             <div id="wrapper" class="fade-in">
 
+                <!-- Center Image -->
+                <img src="images/cover.jpg" alt="Cover Image" class="center-image">
+
                 <!-- Intro -->
-                    <div id="intro" class="intro-background">
+                    <div id="intro">
                         <h1>Michael Porco <br /> Data Analytics Portfolio<br />
                         </h1>
-                        <p>Data Analyst skilled in Python, SQL, Tableau, Excel, and R. Find me on <a href="https://www.linkedin.com/in/michael-porco-b01225206/">linkedin</a>.
+                        <p>Data Analyst skilled in Python, SQL, Tableau, Excel, and R.   Find me on <a href="https://www.linkedin.com/in/michael-porco-b01225206/">linkedin</a>.
                         </p>
                         <ul class="actions">
                             <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
@@ -100,7 +90,7 @@
                                         </a></h2>
                                     </header>
                                     <a href="https://github.com/mikeporco23/Portfolio/blob/main/coffee.pdf" class="image fit"><img src="images/espresso.jpeg" alt="" loading="lazy" /></a>
-                                    <p>Using R, I clean, analyze, and visualize coffee exportation data to find the countries with growing exports. I used mutate to calculate new columns, I pivoted data for better visualization.</p>
+                                    <p>Using R, I clean, analyze, and visualize coffee exportation data to find the countries with growing exports.  I used mutate to calculate new columns, I pivoted the data to make it more meaningful for analysis.</p>
                                     <ul class="actions special">
                                         <li><a href="https://github.com/mikeporco23/Portfolio/blob/main/coffee.pdf" class="button">View Analysis</a></li>
                                     </ul>
@@ -111,7 +101,7 @@
                                         </a></h2>
                                     </header>
                                     <a href="https://github.com/mikeporco23/Portfolio/blob/main/cyclistic.pdf" class="image fit"><img src="images/bikerack.jpeg" alt="" loading="lazy" /></a>
-                                    <p>Using R I clean, analyze, and visualize bike share usage data to find actionable insights for the fictional Cyclistic business. I combined multiple datasets for comprehensive analysis.</p>
+                                    <p>Using R I clean, analyze, and visualize bike share usage data to find actionable insights for the fictional Cyclistic business. I combined multiple datasets to create a comprehensive analysis.</p>
                                     <ul class="actions special">
                                         <li><a href="https://github.com/mikeporco23/Portfolio/blob/main/cyclistic.pdf" class="button">View Analysis</a></li>
                                     </ul>
@@ -122,7 +112,7 @@
                                         </a></h2>
                                     </header>
                                     <a href="https://github.com/mikeporco23/python-populator" class="image fit"><img src="images/mohawk.png" alt="" loading="lazy" /></a>
-                                    <p>This python project makes it possible to create thousands of unique png images and json attribute files from layers of hand drawn images made by my brother.</p>
+                                    <p>This python project makes it possible to create thousands of unique png images and json attribute files from layers of hand drawn images made by my brother. The project uses a python script to automate the creation process.</p>
                                     <ul class="actions special">
                                         <li><a href="https://github.com/mikeporco23/python-populator" class="button">View Project</a></li>
                                     </ul>
@@ -134,7 +124,7 @@
                                         </a></h2>
                                     </header>
                                     <a href="https://github.com/mikeporco23/Portfolio/blob/main/Tip-Out-Sheet.xlsx" class="image fit"><img src="images/restaurant.jpeg" alt="" loading="lazy" /></a>
-                                    <p>While working as a Server and Bartender in a local French Restaurant, I noticed an opportunity for me to use my skills as a data analyst to improve efficiency in tip distribution.</p>
+                                    <p>While working as a Server and Bartender in a local French Restaurant, I noticed an opportunity for me to use my skills as a data analyst to improve efficiency in tip distribution. I created a spreadsheet to automate the calculation process.</p>
                                     <ul class="actions special">
                                         <li><a href="https://github.com/mikeporco23/Portfolio/blob/main/Tip-Out-Sheet.xlsx" class="button">View Project</a></li>
                                     </ul>
@@ -158,6 +148,12 @@
                                 </ul>
                             </section>
                         </section>
+                    </footer>
+
+                <!-- Copyright -->
+                    <div id="copyright">
+                        <ul><li>&copy; Michael Porco</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+                    </div>
 
             </div>
 
