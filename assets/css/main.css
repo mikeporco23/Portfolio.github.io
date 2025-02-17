@@ -1,7 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -435,4 +434,16 @@ h1, h2, h3, h4, h5, h6 {
 p {
     margin: 10px 0;
     line-height: 1.6;
+}
+
+/* Ensure images do not exceed their container's width */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Additional constraints for specific image classes, if needed */
+.center-image, .half-size-image, .cover-image, .card img {
+    max-width: 100%; /* Ensure these images do not exceed 100% of their container's width */
+    height: auto; /* Maintain aspect ratio */
 }
