@@ -2237,6 +2237,21 @@ input, select, textarea {
 				background-color: #18bfef;
 			}
 
+.nav-link .button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin-left: 1em;
+    background-color: #18bfef;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link .button:hover {
+    background-color: #0e8ca8;
+}
+
 /* Form */
 
 	form {
